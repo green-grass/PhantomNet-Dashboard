@@ -20,7 +20,6 @@
     "NETStandard.Library": "1.6.0",
     "PhantomNet.SharedStrings": "1.0.3-*",
     "PhantomNet.AspNetCore.Mvc.SharedStrings": "1.0.0-*",
-    "PhantomNet.AspNetCore.Dashboard.SharedStrings": "1.0.0-*",
     "PhantomNet.AspNetCore.Dashboard": "1.0.0-*"
   },
 

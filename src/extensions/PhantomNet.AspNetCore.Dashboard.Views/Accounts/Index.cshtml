@@ -1,8 +1,8 @@
 ﻿@inject IHtmlLocalizer<PhantomNet.ButtonStrings> ButtonLocalizer
 @inject IHtmlLocalizer<PhantomNet.AspNetCore.Mvc.WebStrings> WebLocalizer
-@inject IHtmlLocalizer<PhantomNet.AspNetCore.Dashboard.IdentityAccountStrings> IdentityAccountLocalizer
+@inject IHtmlLocalizer<PhantomNet.AspNetCore.Dashboard.Resources.Accounts.IndexViewResources> ViewLocalizer
 @{
-    ViewData["Title"] = IdentityAccountLocalizer["Accounts"].Value;
+    ViewData["Title"] = ViewLocalizer["Accounts"].Value;
     ViewBag.ActiveMenuItem = "Accounts";
 }
 
@@ -12,8 +12,8 @@
      ng-cloak>
     <div pn-list-dashhead
          pn-title="@ViewData["Title"]"
-         subtitle="@IdentityAccountLocalizer["System"]"
-         search-placeholder="@IdentityAccountLocalizer["Search account"]"
+         subtitle="@ViewLocalizer["System"]"
+         search-placeholder="@ViewLocalizer["Search account"]"
          search-terms="search"
          empty-list="totalCount === 0"
          on-toggle-add-form="onToggleAdForm()">
@@ -29,11 +29,11 @@
          class="pn-animate-height clearfix"
          ng-show="showAddForm"
          empty-list="totalCount === 0"
-         empty-list-message="@IdentityAccountLocalizer["There is no account in the system. Please create a new one here."]"
+         empty-list-message="@ViewLocalizer["There is no account in the system. Please create a new one here."]"
          on-submit="add(newModel)">
         <div class="flextable flextable-responsive flextable-separate">
-            <div pn-flextable-text-input class="w-md" placeholder="@IdentityAccountLocalizer["Email"]" ng-model="newModel.email" focus-if="showAddForm && focusAddFormInput"></div>
-            <div pn-flextable-text-input class="w-md" placeholder="@IdentityAccountLocalizer["Password"]" ng-model="newModel.password"></div>
+            <div pn-flextable-text-input class="w-md" placeholder="@ViewLocalizer["Email"]" ng-model="newModel.email" focus-if="showAddForm && focusAddFormInput"></div>
+            <div pn-flextable-text-input class="w-md" placeholder="@ViewLocalizer["Password"]" ng-model="newModel.password"></div>
             <div pn-flextable-submit-reset></div>
         </div>
     </div>
@@ -43,9 +43,9 @@
          class="text-sm-right"
          count="totalCount"
          filtered-count="filteredCount"
-         zero-message="@IdentityAccountLocalizer["No account found."]"
-         single-message="@IdentityAccountLocalizer["1 account found."]"
-         plural-message="@(IdentityAccountLocalizer["(count | number) + ' accounts found.'"])">
+         zero-message="@ViewLocalizer["No account found."]"
+         single-message="@ViewLocalizer["1 account found."]"
+         plural-message="@(ViewLocalizer["(count | number) + ' accounts found.'"])">
     </div>
     <div class="m-t visible-xs"></div>
 
@@ -58,8 +58,8 @@
                             class="w-md"
                             sorted="sortExpression === 'email'"
                             reverse="sortReverse"
-                            on-sort="sort('email', reverse)">@IdentityAccountLocalizer["Email"]</th>
-                        <th class="w-md">@IdentityAccountLocalizer["Password"]</th>
+                            on-sort="sort('email', reverse)">@ViewLocalizer["Email"]</th>
+                        <th class="w-md">@ViewLocalizer["Password"]</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -70,8 +70,8 @@
                         <td pn-table-edit-delete on-edit="edit(model)" on-delete="confirmDelete(model)"></td>
                     </tr>
                     <tr ng-repeat-end ng-if="model.id && model.id === editModel.id" ng-keydown="onEditorKeydown($event, model)">
-                        <td pn-table-text-input placeholder="@IdentityAccountLocalizer["Email"]" ng-model="editModel.email"></td>
-                        <td pn-table-text-input placeholder="@IdentityAccountLocalizer["Password"]" ng-model="editModel.password"></td>
+                        <td pn-table-text-input placeholder="@ViewLocalizer["Email"]" ng-model="editModel.email"></td>
+                        <td pn-table-text-input placeholder="@ViewLocalizer["Password"]" ng-model="editModel.password"></td>
                         <td pn-table-update-cancel on-update="update(editModel, model)" on-cancel="cancelUpdate()"></td>
                     </tr>
                 </tbody>
