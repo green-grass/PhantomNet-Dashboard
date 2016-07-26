@@ -1,5 +1,15 @@
 {
-  "version": "1.0.0-*",
+  "title": "PhantomNet.AspNetCore.Dashboard",
+  "copyright": "Green Grass",
+  "description": "PhantomNet.AspNetCore.Dashboard class library",
+  "language": "en",
+  "version": "1.0.0-beta-*",
+  "authors": [ "Minh Nguyen" ],
+
+  "packOptions": {
+    "licenseUrl": "https://github.com/green-grass/PhantomNet-Dashboard/blob/master/LICENSE",
+    "projectUrl": "https://github.com/green-grass/PhantomNet-Dashboard"
+  },
 
   "dependencies": {
     "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0",
