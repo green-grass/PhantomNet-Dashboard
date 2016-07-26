@@ -18,7 +18,7 @@
     "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0",
     "Microsoft.Extensions.FileProviders.Embedded": "1.0.0",
     "NETStandard.Library": "1.6.0",
-    "PhantomNet.SharedStrings": "1.1.0-*",
+    "PhantomNet.SharedStrings": "1.0.3-*",
     "PhantomNet.AspNetCore.Mvc.SharedStrings": "1.0.0-*",
     "PhantomNet.AspNetCore.Dashboard.SharedStrings": "1.0.0-*",
     "PhantomNet.AspNetCore.Dashboard": "1.0.0-*"
