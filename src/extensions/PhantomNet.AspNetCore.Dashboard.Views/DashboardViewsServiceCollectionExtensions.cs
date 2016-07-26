@@ -7,7 +7,7 @@ namespace Microsoft.Extensions.DependencyInjection
 {
     public static class DashboardViewsServiceCollectionExtensions
     {
-        public static IdentityBuilder AddDashboardIdentityAccountViews(this IdentityBuilder builder)
+        public static DashboardBuilder AddDashboardIdentityAccountViews(this DashboardBuilder builder)
         {
             builder.Services.Configure<RazorViewEngineOptions>(options => {
                 options.FileProviders.Add(new EmbeddedFileProvider(DashboardViews.Assembly, DashboardViews.Namespace));
