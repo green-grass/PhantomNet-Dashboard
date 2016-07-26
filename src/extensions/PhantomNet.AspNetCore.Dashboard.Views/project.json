@@ -1,0 +1,31 @@
+{
+  "title": "PhantomNet.AspNetCore.Dashboard.Views",
+  "copyright": "Green Grass",
+  "description": "PhantomNet.AspNetCore.Dashboard.Views class library",
+  "language": "en",
+  "version": "1.0.0-beta-*",
+  "authors": [ "Minh Nguyen" ],
+
+  "packOptions": {
+    "licenseUrl": "https://github.com/green-grass/PhantomNet-Dashboard/blob/master/LICENSE",
+    "projectUrl": "https://github.com/green-grass/PhantomNet-Dashboard"
+  },
+
+  "dependencies": {
+    "Microsoft.AspNetCore.Identity": "1.0.0",
+    "Microsoft.AspNetCore.Mvc.Localization": "1.0.0",
+    "Microsoft.AspNetCore.Mvc.Razor": "1.0.0",
+    "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0",
+    "Microsoft.Extensions.FileProviders.Embedded": "1.0.0",
+    "NETStandard.Library": "1.6.0",
+    "PhantomNet.SharedStrings": "1.1.0-*",
+    "PhantomNet.AspNetCore.Mvc.SharedStrings": "1.0.0-*",
+    "PhantomNet.AspNetCore.Dashboard.SharedStrings": "1.0.0-*"
+  },
+
+  "frameworks": {
+    "netstandard1.6": {
+      "imports": "dnxcore50"
+    }
+  }
+}
