@@ -33,7 +33,7 @@
          on-submit="add(newModel)">
         <div class="flextable flextable-responsive flextable-separate">
             <div pn-flextable-text-input class="w-md" placeholder="@ViewLocalizer["Email"]" ng-model="newModel.email" focus-if="showAddForm && focusAddFormInput"></div>
-            <div pn-flextable-text-input class="w-md" placeholder="@ViewLocalizer["Password"]" ng-model="newModel.password"></div>
+            <div pn-flextable-text-input class="w-md" placeholder="@ViewLocalizer["Password"]" ng-model="newModel.password" password></div>
             <div pn-flextable-submit-reset></div>
         </div>
     </div>
@@ -71,7 +71,7 @@
                     </tr>
                     <tr ng-repeat-end ng-if="model.id && model.id === editModel.id" ng-keydown="onEditorKeydown($event, model)">
                         <td pn-table-text-input placeholder="@ViewLocalizer["Email"]" ng-model="editModel.email"></td>
-                        <td pn-table-text-input placeholder="@ViewLocalizer["Password"]" ng-model="editModel.password"></td>
+                        <td pn-table-text-input placeholder="@ViewLocalizer["Password"]" ng-model="editModel.password" password></td>
                         <td pn-table-update-cancel on-update="update(editModel, model)" on-cancel="cancelUpdate()"></td>
                     </tr>
                 </tbody>
