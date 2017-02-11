@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using PhantomNet.AspNetCore.Dashboard;
 
-namespace PhantomNet.AspNetCore.Dashboard
+namespace Microsoft.Extensions.DependencyInjection
 {
     public static class DashboardServiceCollectionExtensions
     {
