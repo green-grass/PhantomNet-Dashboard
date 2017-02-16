@@ -1,4 +1,4 @@
-﻿namespace PhantomNet.AspNetCore.Dashboard.Resources
+﻿namespace PhantomNet.AspNetCore.Dashboard.Views.Resources
 {
     public class SharedIndexViewResources { }
 }
