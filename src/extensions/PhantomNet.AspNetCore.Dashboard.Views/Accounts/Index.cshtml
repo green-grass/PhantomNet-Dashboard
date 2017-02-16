@@ -1,7 +1,7 @@
-﻿@inject IHtmlLocalizer<PhantomNet.ButtonStrings> ButtonLocalizer
-@inject IHtmlLocalizer<PhantomNet.CommonStrings> CommonLocalizer
+﻿@inject IHtmlLocalizer<PhantomNet.SharedStrings.ButtonStrings> ButtonLocalizer
+@inject IHtmlLocalizer<PhantomNet.SharedStrings.CommonStrings> CommonLocalizer
 @inject IHtmlLocalizer<PhantomNet.AspNetCore.Dashboard.Views.Resources.SharedIndexViewResources> SharedViewLocalizer
-@inject IHtmlLocalizer<PhantomNet.AspNetCore.Dashboard.Resources.Accounts.IndexViewResources> ViewLocalizer
+@inject IHtmlLocalizer<PhantomNet.AspNetCore.Dashboard.Views.Resources.Accounts.IndexViewResources> ViewLocalizer
 @{
     ViewData["Title"] = ViewLocalizer["Accounts"].Value;
     ViewBag.ActiveMenuItem = "Accounts";
