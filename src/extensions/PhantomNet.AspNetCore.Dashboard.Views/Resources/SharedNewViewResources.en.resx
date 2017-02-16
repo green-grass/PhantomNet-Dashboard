@@ -117,8 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&quot;Are you sure want to ignore all changes and return to {0} list?&quot;" xml:space="preserve">
-    <value>"Are you sure want to ignore all changes and return to {0} list?"</value>
+  <data name="Are you sure want to ignore all changes and return to {0} list?" xml:space="preserve">
+    <value>Are you sure want to ignore all changes and return to {0} list?</value>
   </data>
   <data name="{0} created. Redirecting to {0} view..." xml:space="preserve">
     <value>{0} created. Redirecting to {0} view...</value>
