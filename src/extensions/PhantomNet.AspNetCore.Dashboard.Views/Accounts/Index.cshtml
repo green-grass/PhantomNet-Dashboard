@@ -23,7 +23,7 @@
          on-toggle-add-form="onToggleAdForm()">
     </div>
 
-    <div pn-errors close-label="Đóng" message="errorMessage" errors="errors" on-clear="clearErrors()"></div>
+    <div pn-errors close-label="@ButtonLocalizer["Close"]" message="errorMessage" errors="errors" on-clear="clearErrors()"></div>
 
     <div pn-loading ng-if="showLoading">@CommonLocalizer["loading..."]</div>
 
