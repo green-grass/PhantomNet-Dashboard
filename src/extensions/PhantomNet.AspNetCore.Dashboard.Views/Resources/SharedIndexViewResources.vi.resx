@@ -117,22 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Accounts" xml:space="preserve">
-    <value>Accounts</value>
+  <data name="(count | number) + ' {0} found.'" xml:space="preserve">
+    <value>'Tìm thấy ' + (count | number) + ' {0}.'</value>
   </data>
-  <data name="Email" xml:space="preserve">
-    <value>Email</value>
+  <data name="1 {0} found." xml:space="preserve">
+    <value>Tìm thấy 1 {0}.</value>
   </data>
-  <data name="ItemName" xml:space="preserve">
-    <value>account</value>
+  <data name="No {0} found." xml:space="preserve">
+    <value>Không tìm thấy {0} nào.</value>
   </data>
-  <data name="Password" xml:space="preserve">
-    <value>Password</value>
+  <data name="Search {0}" xml:space="preserve">
+    <value>Tìm {0}</value>
   </data>
-  <data name="PluralizedItemName" xml:space="preserve">
-    <value>accounts</value>
+  <data name="There is no {0} in the system. Please create a new one here." xml:space="preserve">
+    <value>Không có {0} nào trong hệ thống. Vui lòng tạo mới tại đây.</value>
   </data>
-  <data name="System" xml:space="preserve">
-    <value>System</value>
+  <data name="{0} created. Redirecting to {0} view..." xml:space="preserve">
+    <value>{0} đã được tạo. Đang chuyển đến trang xem {0}...</value>
   </data>
 </root>

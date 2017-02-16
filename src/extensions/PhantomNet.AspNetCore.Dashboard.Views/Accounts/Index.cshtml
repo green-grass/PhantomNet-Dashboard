@@ -1,9 +1,13 @@
 ﻿@inject IHtmlLocalizer<PhantomNet.ButtonStrings> ButtonLocalizer
-@inject IHtmlLocalizer<PhantomNet.AspNetCore.Mvc.WebStrings> WebLocalizer
+@inject IHtmlLocalizer<PhantomNet.CommonStrings> CommonLocalizer
+@inject IHtmlLocalizer<PhantomNet.AspNetCore.Dashboard.Resources.SharedIndexViewResources> SharedViewLocalizer
 @inject IHtmlLocalizer<PhantomNet.AspNetCore.Dashboard.Resources.Accounts.IndexViewResources> ViewLocalizer
 @{
     ViewData["Title"] = ViewLocalizer["Accounts"].Value;
     ViewBag.ActiveMenuItem = "Accounts";
+
+    var itemName = ViewLocalizer["ItemName"];
+    var pluralizedItemName = ViewLocalizer["PluralizedItemName"];
 }
 
 <div ng-app="pnAccountList"
@@ -13,7 +17,7 @@
     <div pn-list-dashhead
          pn-title="@ViewData["Title"]"
          subtitle="@ViewLocalizer["System"]"
-         search-placeholder="@ViewLocalizer["Search account"]"
+         search-placeholder="@SharedViewLocalizer["Search {0}", itemName]"
          search-terms="search"
          empty-list="totalCount === 0"
          on-toggle-add-form="onToggleAdForm()">
@@ -21,15 +25,15 @@
 
     <div pn-errors close-label="Đóng" message="errorMessage" errors="errors" on-clear="clearErrors()"></div>
 
-    <div pn-loading ng-if="showLoading">@WebLocalizer["loading..."]</div>
+    <div pn-loading ng-if="showLoading">@CommonLocalizer["loading..."]</div>
 
-    <div pn-loading ng-if="showSaving">@WebLocalizer["saving..."]</div>
+    <div pn-loading ng-if="showSaving">@CommonLocalizer["saving..."]</div>
 
     <div pn-list-add-form
          class="pn-animate-height clearfix"
          ng-show="showAddForm"
          empty-list="totalCount === 0"
-         empty-list-message="@ViewLocalizer["There is no account in the system. Please create a new one here."]"
+         empty-list-message="@SharedViewLocalizer["There is no {0} in the system. Please create a new one here.", itemName]"
          on-submit="add(newModel)">
         <div class="flextable flextable-responsive flextable-separate">
             <div pn-flextable-text-input class="w-md" placeholder="@ViewLocalizer["Email"]" ng-model="newModel.email" focus-if="showAddForm && focusAddFormInput"></div>
@@ -43,9 +47,9 @@
          class="text-sm-right"
          count="totalCount"
          filtered-count="filteredCount"
-         zero-message="@ViewLocalizer["No account found."]"
-         single-message="@ViewLocalizer["1 account found."]"
-         plural-message="@(ViewLocalizer["(count | number) + ' accounts found.'"])">
+         zero-message="@SharedViewLocalizer["No {0} found.", itemName]"
+         single-message="@SharedViewLocalizer["1 {0} found.", itemName]"
+         plural-message="@(SharedViewLocalizer["(count | number) + ' {0} found.'", pluralizedItemName])">
     </div>
     <div class="m-t visible-xs"></div>
 
@@ -83,7 +87,7 @@
          accessor="deleteConfirmationModalAccessor"
          id="deleteConfirmationModal"
          close-label="@ButtonLocalizer["Close"]"
-         title="@WebLocalizer["Caution"]"
+         title="@CommonLocalizer["Caution"]"
          delete-label="@ButtonLocalizer["Delete"]"
          cancel-label="@ButtonLocalizer["Cancel"]"
          on-confirm="delete(deleteConfirmingModel)"

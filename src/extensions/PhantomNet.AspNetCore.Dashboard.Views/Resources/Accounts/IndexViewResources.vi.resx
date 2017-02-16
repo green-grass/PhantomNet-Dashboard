@@ -117,31 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="(count | number) + ' accounts found.'" xml:space="preserve">
-    <value>'Tìm thấy ' + (count | number) + ' tài khoản.'</value>
-  </data>
-  <data name="1 account found." xml:space="preserve">
-    <value>Tìm thấy 1 tài khoản.</value>
-  </data>
   <data name="Accounts" xml:space="preserve">
     <value>Tài Khoản</value>
   </data>
   <data name="Email" xml:space="preserve">
     <value>Email</value>
   </data>
-  <data name="No account found." xml:space="preserve">
-    <value>Không tìm thấy tài khoản nào.</value>
+  <data name="ItemName" xml:space="preserve">
+    <value>tài khoản</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>Mật khẩu</value>
   </data>
-  <data name="Search account" xml:space="preserve">
-    <value>Tìm tài khoản</value>
+  <data name="PluralizedItemName" xml:space="preserve">
+    <value>tài khoản</value>
   </data>
   <data name="System" xml:space="preserve">
     <value>Hệ Thống</value>
-  </data>
-  <data name="There is no account in the system. Please create a new one here." xml:space="preserve">
-    <value>Không có tài khoản nào trong hệ thống. Vui lòng tạo mới tại đây.</value>
   </data>
 </root>
