@@ -12,21 +12,19 @@
   },
 
   "dependencies": {
-    "Microsoft.AspNetCore.Identity": "1.0.0",
-    "Microsoft.AspNetCore.Mvc.Localization": "1.0.0",
-    "Microsoft.AspNetCore.Mvc.Razor": "1.0.0",
-    "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0",
-    "Microsoft.Extensions.FileProviders.Embedded": "1.0.0",
-    "NETStandard.Library": "1.6.0",
     "PhantomNet.SharedStrings": "1.0.3-*",
     "PhantomNet.AspNetCore.Mvc.SharedStrings": "1.0.0-*",
-    "PhantomNet.AspNetCore.Dashboard": "1.0.0-*"
+    "PhantomNet.AspNetCore.Dashboard": "1.0.0-*",
+    "Microsoft.AspNetCore.Identity": "1.1.1",
+    "Microsoft.AspNetCore.Mvc.Localization": "1.1.2",
+    "Microsoft.AspNetCore.Mvc.Razor": "1.1.2",
+    "Microsoft.Extensions.DependencyInjection.Abstractions": "1.1.0",
+    "Microsoft.Extensions.FileProviders.Embedded": "1.1.0",
+    "NETStandard.Library": "1.6.1"
   },
 
   "frameworks": {
-    "netstandard1.6": {
-      "imports": "dnxcore50"
-    }
+    "netstandard1.6": {}
   },
 
   "buildOptions": {
