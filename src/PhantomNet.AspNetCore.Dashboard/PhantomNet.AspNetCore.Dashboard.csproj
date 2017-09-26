@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>PhantomNet.AspNetCore.Dashboard class library</Description>
+    <Copyright>Green Grass</Copyright>
+    <AssemblyTitle>PhantomNet.AspNetCore.Dashboard</AssemblyTitle>
+    <VersionPrefix>1.0.0-beta</VersionPrefix>
+    <Authors>Minh Nguyen</Authors>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <AssemblyName>PhantomNet.AspNetCore.Dashboard</AssemblyName>
+    <PackageId>PhantomNet.AspNetCore.Dashboard</PackageId>
+    <PackageProjectUrl>https://github.com/green-grass/PhantomNet-Dashboard</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/green-grass/PhantomNet-Dashboard/blob/master/LICENSE</PackageLicenseUrl>
+    <NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="1.1.0" />
+  </ItemGroup>
+
+</Project>

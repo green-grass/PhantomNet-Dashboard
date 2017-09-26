@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>PhantomNet.AspNetCore.Dashboard.Views class library</Description>
+    <Copyright>Green Grass</Copyright>
+    <AssemblyTitle>PhantomNet.AspNetCore.Dashboard.Views</AssemblyTitle>
+    <VersionPrefix>1.0.0-beta</VersionPrefix>
+    <Authors>Minh Nguyen</Authors>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <AssemblyName>PhantomNet.AspNetCore.Dashboard.Views</AssemblyName>
+    <PackageId>PhantomNet.AspNetCore.Dashboard.Views</PackageId>
+    <PackageProjectUrl>https://github.com/green-grass/PhantomNet-Dashboard</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/green-grass/PhantomNet-Dashboard/blob/master/LICENSE</PackageLicenseUrl>
+    <NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include=".\**\*.cshtml" Exclude="bin\**;obj\**;**\*.xproj;packages\**;@(EmbeddedResource)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\PhantomNet.AspNetCore.Dashboard\PhantomNet.AspNetCore.Dashboard.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="PhantomNet.SharedStrings" Version="1.0.3-*" />
+    <PackageReference Include="PhantomNet.AspNetCore.Mvc.SharedStrings" Version="1.0.0-*" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Localization" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor" Version="1.1.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="1.1.0" />
+    <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="1.1.0" />
+  </ItemGroup>
+
+</Project>

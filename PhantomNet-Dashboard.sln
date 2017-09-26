@@ -1,22 +1,22 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{34BA4976-C95C-42ED-904B-39FD46513073}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C36E40C1-1DE4-434A-8749-30487A900C55}"
 	ProjectSection(SolutionItems) = preProject
+		appveyor.yml = appveyor.yml
 		Build.ps1 = Build.ps1
-		global.json = global.json
 		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "extensions", "extensions", "{261AA10F-2D62-41E1-B983-24ACDECA5D42}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PhantomNet.AspNetCore.Dashboard.Views", "src\extensions\PhantomNet.AspNetCore.Dashboard.Views\PhantomNet.AspNetCore.Dashboard.Views.xproj", "{43B707FD-6E14-4192-9B16-093F95C73735}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhantomNet.AspNetCore.Dashboard.Views", "src\extensions\PhantomNet.AspNetCore.Dashboard.Views\PhantomNet.AspNetCore.Dashboard.Views.csproj", "{43B707FD-6E14-4192-9B16-093F95C73735}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PhantomNet.AspNetCore.Dashboard", "src\PhantomNet.AspNetCore.Dashboard\PhantomNet.AspNetCore.Dashboard.xproj", "{6A1844F4-42C9-4377-B927-5293725C21DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhantomNet.AspNetCore.Dashboard", "src\PhantomNet.AspNetCore.Dashboard\PhantomNet.AspNetCore.Dashboard.csproj", "{6A1844F4-42C9-4377-B927-5293725C21DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,5 +40,8 @@ Global
 		{261AA10F-2D62-41E1-B983-24ACDECA5D42} = {34BA4976-C95C-42ED-904B-39FD46513073}
 		{43B707FD-6E14-4192-9B16-093F95C73735} = {261AA10F-2D62-41E1-B983-24ACDECA5D42}
 		{6A1844F4-42C9-4377-B927-5293725C21DC} = {34BA4976-C95C-42ED-904B-39FD46513073}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B064DB2F-D33D-4D21-9FCE-425B0D886A30}
 	EndGlobalSection
 EndGlobal
