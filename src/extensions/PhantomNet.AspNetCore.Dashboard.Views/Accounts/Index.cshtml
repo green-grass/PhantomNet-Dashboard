@@ -59,11 +59,12 @@
                 <thead>
                     <tr>
                         <th pn-sortable-column
-                            class="w-md"
+                            class="w-sm"
                             sorted="sortExpression === 'email'"
                             reverse="sortReverse"
                             on-sort="sort('email', reverse)">@ViewLocalizer["Email"]</th>
-                        <th class="w-md">@ViewLocalizer["Password"]</th>
+                        <th class="w-sm">@ViewLocalizer["Password"]</th>
+                        <th class="w-md">@ViewLocalizer["Roles"]</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -71,11 +72,23 @@
                     <tr ng-repeat-start="model in models | search: searchFilter" ng-if="model.id !== editModel.id" ng-dblclick="edit(model)">
                         <td>{{model.email}}</td>
                         <td>******</td>
+                        <td>{{formateArray(model.roles)}}</td>
                         <td pn-table-edit-delete on-edit="edit(model)" on-delete="confirmDelete(model)"></td>
                     </tr>
                     <tr ng-repeat-end ng-if="model.id && model.id === editModel.id" ng-keydown="onEditorKeydown($event, model)">
                         <td pn-table-text-input placeholder="@ViewLocalizer["Email"]" ng-model="editModel.email"></td>
                         <td pn-table-text-input placeholder="@ViewLocalizer["Password"]" ng-model="editModel.password" password></td>
+                        <td>
+                            <div pn-auto-complete
+                                 style="white-space: normal"
+                                 pn-input-class="input-xs"
+                                 ng-model="editModel.roles"
+                                 match-display="$item"
+                                 factory="roleFactory"
+                                 multiple>
+                                <div ng-bind-html="$parent.item | highlight: $parent.$parent.$select.search"></div>
+                            </div>
+                        </td>
                         <td pn-table-update-cancel on-update="update(editModel, model)" on-cancel="cancelUpdate()"></td>
                     </tr>
                 </tbody>
